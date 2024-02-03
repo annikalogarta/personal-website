@@ -5,7 +5,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Footer from "./pages/Footer"
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -22,5 +22,3 @@ function App() {
     </>
   )
 }
-
-export default App

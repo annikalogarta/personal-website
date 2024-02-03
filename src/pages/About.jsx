@@ -1,6 +1,6 @@
 import Headshot from "../assets/headshot.jpg"
 
-const About = () => {
+export default function About() {
     return (
         <>
         <div id="about" className="text-white mb-96 sm:px-12 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
@@ -17,5 +17,3 @@ const About = () => {
         </>
     )
 }
-
-export default About

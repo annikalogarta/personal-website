@@ -1,0 +1,20 @@
+@font-face {
+  font-family: InriaSans;
+  src: url(./assets/fonts/InriaSans-Regular.ttf);
+}
+.text-inria {
+  font-family: InriaSans;
+}
+
+@font-face {
+  font-family: BlackHanSans;
+  src: url(./assets/fonts/BlackHanSans-Regular.ttf);
+}
+
+.text-BlackHanSans {
+  font-family: BlackHanSans;
+}
+
+.text-shadow-orange {
+  text-shadow: 4px 4px #c96b00;
+}

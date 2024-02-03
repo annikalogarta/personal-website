@@ -5,7 +5,7 @@ import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Pdf from "../assets/AnnikaLogarta_Resume_Test.pdf"
 
-const Home = () => {
+export default function Home() {
     
     return (
         <>
@@ -24,5 +24,3 @@ const Home = () => {
         </>
     )
 }
-
-export default Home
