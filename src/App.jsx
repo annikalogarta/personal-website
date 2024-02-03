@@ -1,9 +1,9 @@
 import './App.css'
-import NavBar from "/components/NavBar"
-import Home from "/pages/Home"
-import About from "/pages/About"
-import Projects from "/pages/Projects"
-import Footer from "/pages/Footer"
+import NavBar from './components/NavBar'
+import Home from './pages/Home'
+import About from "./pages/About"
+import Projects from "./pages/Projects"
+import Footer from "./pages/Footer"
 
 function App() {
 
