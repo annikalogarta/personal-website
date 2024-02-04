@@ -17,7 +17,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        '1': '-4px 4px 0px 0px rgb(20, 46, 61)',
+        '1': '-4px 4px 0px 0px rgb(183, 45, 27)',
         '2': '8px 8px 0px 0px rgb(201, 107, 0)',
       },
     },
