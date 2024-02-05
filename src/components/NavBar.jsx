@@ -11,9 +11,9 @@ export default function NavBar() {
                 <ul className="list-none overflow-hidden mr-8">
                     <div className="">
                     
-                    <li className="float-right block text-center px-7 py-5 hover:text-orange duration-300"><a href={ Pdf } target="_blank" rel="noopener noreferrer">Resume</a></li>
-                    <li className="float-right block text-center px-7 py-5 hover:text-orange duration-300"><a href="#projects">Projects</a></li>
-                    <li className="float-right block text-center px-7 py-5 hover:text-orange duration-300"><a href="#about">About</a></li>
+                    <li className="float-right block text-center px-7 py-5 hover:text-orange text-white-glow duration-300"><a href={ Pdf } target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li className="float-right block text-center px-7 py-5 hover:text-orange text-white-glow duration-300"><a href="#projects">Projects</a></li>
+                    <li className="float-right block text-center px-7 py-5 hover:text-orange text-white-glow duration-300"><a href="#about">About</a></li>
                     </div>
                 </ul>
             </nav>

@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <div className=" mx-4 px-24 pt-64 text-white">
                 <p className="text-2xl pb-3 px-2">hi, i'm</p>
-                <h1 className="text-white text-shadow-orange text-7xl pt-2 text-BlackHanSans mb-3">Annika Logarta</h1>
+                <h1 className="text-white text-shadow-name text-7xl text-BlackHanSans inline-block pt-2 mb-3 duration-500">Annika Logarta</h1>
                 <ul className="flex space-x-6 px-2 text-4xl mt-1">
                     <li className="icon-shadow hover:text-orange duration-300"><a href="https://www.linkedin.com/in/annikalogarta/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a></li>
                     <li className="hover:text-orange duration-300"><a href="https://github.com/annikalogarta" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
