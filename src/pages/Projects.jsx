@@ -1,16 +1,14 @@
 import ProjectCard from "../components/ProjectCard"
 
 const proj = [
-    { title: 'Vital Watch', tools: 'C, STM32', description: 'Lorem ipsum'}
+    { title: 'Vital Watch', tools: 'C, STM32', description: 'Lorem ipsum', link: 'https://github.com/annikalogarta/vital_watch'}
 ]
 
 export default function Projects() {
+
     return(
         <>
         <div className="text-white mb-96 sm:px-12 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
-
-            
-
             <a id="projects" className="anchor"></a>
             <h2 className="text-white text-shadow-headline text-5xl  text-BlackHanSans mb-2">projects</h2>
             
@@ -23,13 +21,10 @@ export default function Projects() {
                     proj.map((project) =>
                     <ProjectCard
                     title={project.title}
+                    link={project.link}
                     tools={project.title}
                     description={project.description} />)
                 }
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
 
             </div>
             

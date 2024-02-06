@@ -11,6 +11,10 @@
   src: url(./assets/fonts/BlackHanSans-Regular.ttf);
 }
 
+* {
+  cursor: none;
+}
+
 .text-BlackHanSans {
   font-family: BlackHanSans;
 }
@@ -35,4 +39,15 @@
 
 .text-white-glow:hover {
   text-shadow: 0px 0px 30px #e0e2db;
+}
+
+.cursor {
+  background-color: #e8e8e8;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
