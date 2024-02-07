@@ -2,11 +2,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import React from 'react';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import Pdf from "../assets/AnnikaLogarta_Resume_Test.pdf"
+import Pdf from "../assets/Annika_Logarta_Resume_Feb2024.pdf"
 
 export default function Home() {
-    
+
     return (
         <>
             <div className=" mx-4 px-24 pt-64 text-white">

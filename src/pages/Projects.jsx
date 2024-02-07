@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard"
 
 const proj = [
-    { title: 'Vital Watch', tools: 'C, STM32', description: 'Lorem ipsum', link: 'https://github.com/annikalogarta/vital_watch'}
+    { id: 1, title: 'Vital Watch', tools: 'C, STM32', description: 'Lorem ipsum', link: 'https://github.com/annikalogarta/vital_watch'}
 ]
 
 export default function Projects() {
@@ -18,12 +18,17 @@ export default function Projects() {
 
             <div className="grid grid-cols-4 gap-8">
                 {
-                    proj.map((project) =>
-                    <ProjectCard
-                    title={project.title}
-                    link={project.link}
-                    tools={project.title}
-                    description={project.description} />)
+                    proj.map((project) => {
+
+                        return <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        link={project.link}
+                        tools={project.title}
+                        description={project.description} />
+
+                    }
+                    )
                 }
 
             </div>

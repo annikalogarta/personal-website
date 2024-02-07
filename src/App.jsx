@@ -51,7 +51,7 @@ export default function App() {
       <motion.div
       className='cursor'
       variants={variants}
-      animate="default"
+      animate={"default"}
       />
         
     </>
