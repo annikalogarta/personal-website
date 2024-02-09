@@ -15,6 +15,10 @@
   cursor: none;
 }
 
+button:hover {
+  cursor: none;
+}
+
 .text-BlackHanSans {
   font-family: BlackHanSans;
 }
@@ -42,7 +46,7 @@
 }
 
 .cursor {
-  background-color: #e8e8e8;
+  background-color: #c96b00;
   height: 32px;
   width: 32px;
   border-radius: 50%;
