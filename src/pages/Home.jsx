@@ -2,7 +2,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import React from 'react';
-import Pdf from "../assets/Annika_Logarta_Resume_Feb2024.pdf"
+import Pdf from "../assets/Annika_Logarta_Resume.pdf"
 
 export default function Home() {
 

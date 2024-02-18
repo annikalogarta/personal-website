@@ -1,5 +1,5 @@
 import Icon from "../assets/logo.png"
-import Pdf from "../assets/Annika_Logarta_Resume_Feb2024.pdf"
+import Pdf from "../assets/Annika_Logarta_Resume.pdf"
 
 export default function NavBar() {
     
