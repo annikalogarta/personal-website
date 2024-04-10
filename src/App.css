@@ -46,7 +46,8 @@ button:hover {
 }
 
 .cursor {
-  background-color: #c96b00;
+  background-color: #ff8800;
+  opacity: 0.5;
   height: 32px;
   width: 32px;
   border-radius: 50%;

@@ -43,8 +43,6 @@ export default function App() {
 
   
         <Home />
-        <About />
-        <Projects />
         <Footer />
       </div>
 
