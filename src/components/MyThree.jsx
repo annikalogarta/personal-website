@@ -1,38 +1,44 @@
 import * as THREE from 'three';
 import { useEffect, useRef } from "react";
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { GradientTexture, OrbitControls, Sphere, useCubeTexture, useEnvironment } from '@react-three/drei';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
 import { FlakesTexture } from 'three/examples/jsm/textures/FlakesTexture';
 
 export default function MyThree() {
-    const refContainer = useRef(null);
-    useEffect(() => {
-    // === THREE.JS CODE START ===
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    // document.body.appendChild( renderer.domElement );
-    // use ref as a mount point of the Three.js scene instead of the document.body
-    refContainer.current && refContainer.current.appendChild( renderer.domElement );
-    
-    var geometry = new THREE.SphereGeometry( 15, 32, 16 ); 
-    var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
-    var sphere = new THREE.Mesh( geometry, material );
-    
-    scene.add( sphere );
 
-    
-    camera.position.z = 60;
-    var animate = function () {
-      requestAnimationFrame(animate);
-      sphere.rotation.x += 0.01;
-      sphere.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    };
-    animate();
-  }, []);
+    return (
+      <div className='absolute left-32 xl:left-72 top-10 -z-10' style={{ height: '60vh', width: '65vh' }} >
+        <Canvas className='' camera={{ position: [0, 0, 5]}}>
+          <OrbitControls autoRotate={true} enableZoom={false} />
+          <directionalLight />
+          <pointLight position={[-10, 0, -10]} power={500.0} color="#ffffff" />
+          <Circle />
+        </Canvas>
+      </div>
+    );
+}
+
+function Circle() {
+
+  var texture = useCubeTexture(
+    ['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png'],
+    { path: "sphere/"}
+  )
+  
   return (
-    <div ref={refContainer}></div>
-  );
+    <group>
+      <Sphere position={[0, 0, 0]} args={[2.7, 64, 64]}>
+        <meshStandardMaterial
+        color={new THREE.Color(0xffffff)}
+        emissive={new THREE.Color(0xa93737)}
+        emissiveIntensity={0.10}
+        roughness={0.15}
+        metalness={0.6}
+        envMap={texture}>
+          <GradientTexture stops={[0, 0.25, 0.5, 0.75, 1]} colors={['#6600ff', '#a409b5', '#e83c45', '#c22338', '#f2900f']} />
+        </ meshStandardMaterial>
+      </Sphere>
+    </group>
+  )
 }

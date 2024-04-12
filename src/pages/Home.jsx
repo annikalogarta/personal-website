@@ -9,9 +9,11 @@ export default function Home() {
 
     return (
         <>
+            <div className="relative">
+            <MyThree />
             <div className="mx-4 px-24 pt-64 text-white">
-                <MyThree />
-                <div className="xl:float-left xl:pr-24 pt-32">
+                
+                <div className="xl:float-left xl:pr-24 pt-20">
                     <p className="text-2xl pb-3 px-2">hi, i'm</p>
                     <h1 className="text-white text-shadow-name text-7xl text-BlackHanSans inline-block pt-2 mb-3 duration-500">Annika Logarta</h1>
                     <ul className="flex space-x-6 px-2 text-4xl mt-1">
@@ -27,7 +29,7 @@ export default function Home() {
 
                 </div>
             </div>
-            
+            </div>
         </>
     )
 }
