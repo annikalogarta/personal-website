@@ -35,7 +35,8 @@ function Circle() {
         emissiveIntensity={0.10}
         roughness={0.15}
         metalness={0.6}
-        envMap={texture}>
+        envMap={texture}
+        wireframe={true}>
           <GradientTexture stops={[0, 0.25, 0.5, 0.75, 1]} colors={['#6600ff', '#a409b5', '#e83c45', '#c22338', '#f2900f']} />
         </ meshStandardMaterial>
       </Sphere>
