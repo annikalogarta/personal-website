@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
                 <div className="xl:mt-0 mt-10 my-3 space-y-2 text-lg">
                     <p>I'm a computer engineering student at the University of Waterloo!</p>
-                    <p>Currently just exploring, but I have an interest in embedded systems and robotics. In my free time, I love shooting videos and taking photos as I travel. Feel free to look around. Reach me by shooting an email to <u><a href="mailto:alogarta@uwaterloo.ca">alogarta@uwaterloo.ca</a></u>.</p>
+                    <p>Currently just exploring, but I have an interest in embedded systems and robotics. In my free time, I love shooting videos and taking photos, especially when travelling. Feel free to look around. Reach me by shooting an email to <u><a href="mailto:alogarta@uwaterloo.ca">alogarta@uwaterloo.ca</a></u>.</p>
 
                 </div>
             </div>
