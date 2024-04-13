@@ -4,11 +4,13 @@ import { SiDevpost } from "react-icons/si";
 import React from 'react';
 import Pdf from "../assets/Annika_Logarta_Resume.pdf"
 import MyThree from "../components/MyThree";
+import Footer from "../components/Footer";
 
 export default function Home() {
 
     return (
         <>
+        <div className="space-y-80">
             <div className="relative">
             <MyThree />
             <div className="mx-4 px-24 pt-64 text-white">
@@ -30,6 +32,8 @@ export default function Home() {
                 </div>
             </div>
             </div>
+            <Footer />
+        </div>
         </>
     )
 }

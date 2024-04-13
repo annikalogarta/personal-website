@@ -8,6 +8,7 @@ export default function Projects() {
 
     return(
         <>
+        <div className="space-y-80">
         <div className="text-white mb-96 sm:px-12 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
             <a id="projects" className="anchor"></a>
             <h2 className="text-white text-shadow-headline text-5xl  text-BlackHanSans mb-2">projects</h2>
@@ -33,6 +34,8 @@ export default function Projects() {
 
             </div>
             
+        </div>
+        <Footer />
         </div>
         </>
     )

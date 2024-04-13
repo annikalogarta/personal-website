@@ -11,14 +11,6 @@
   src: url(./assets/fonts/BlackHanSans-Regular.ttf);
 }
 
-* {
-  cursor: none;
-}
-
-button:hover {
-  cursor: none;
-}
-
 .text-BlackHanSans {
   font-family: BlackHanSans;
 }
@@ -45,6 +37,16 @@ button:hover {
   text-shadow: 0px 0px 30px #e0e2db;
 }
 
+
+@media screen and (min-width: 600px) {
+* {
+  cursor: none;
+}
+
+button:hover {
+  cursor: none;
+}
+
 .cursor {
   background-color: #ff8800;
   opacity: 0.75;
@@ -55,4 +57,5 @@ button:hover {
   top: 0;
   left: 0;
   pointer-events: none;
+}
 }

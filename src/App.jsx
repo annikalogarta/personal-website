@@ -1,11 +1,10 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
-import About from "./pages/About"
-import Projects from "./pages/Projects"
-import Footer from "./pages/Footer"
+import Projects from './pages/Projects'
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
 
@@ -38,13 +37,15 @@ export default function App() {
 
   return (
     <>
-        <NavBar />
-      <div className='space-y-80'>
-
-  
-        <Home />
-        <Footer />
-      </div>
+      
+      <Router>
+      <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+        </Routes>
+      </Router>
+        
 
       <motion.div
       className='cursor z-[100]'
