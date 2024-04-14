@@ -13,6 +13,7 @@ export default function App() {
     y: 0
   })
   console.log(mousePosition);
+  const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
     const mouseMove = e => {
@@ -30,18 +31,27 @@ export default function App() {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16
+      x: mousePosition.x - 15,
+      y: mousePosition.y - 15
+    },
+    text: {
+      x: mousePosition.x - 5,
+      y: mousePosition.y - 5,
+      height: 10,
+      width: 10
     }
   }
+
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
 
   return (
     <>
       
       <Router>
-      <NavBar />
+      <NavBar mouseEnter={textEnter} mouseLeave={textLeave} />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home mouseEnter={textEnter} mouseLeave={textLeave} />} />
           <Route path='/projects' element={<Projects />} />
         </Routes>
       </Router>
@@ -50,7 +60,7 @@ export default function App() {
       <motion.div
       className='cursor z-[100]'
       variants={variants}
-      animate={"default"}
+      animate={cursorVariant}
       />
         
     </>
