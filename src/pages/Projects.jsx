@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard"
+import Footer from "../components/Footer"
 
 const proj = [
     { id: 1, title: 'Vital Watch', tools: ['C', 'STM32'], description: 'Lorem ipsum', link: 'https://github.com/annikalogarta/vital_watch'}
