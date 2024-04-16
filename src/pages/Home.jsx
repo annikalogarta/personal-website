@@ -5,15 +5,20 @@ import React from 'react';
 import Pdf from "../assets/Annika_Logarta_Resume.pdf"
 import MyThree from "../components/MyThree";
 import Footer from "../components/Footer";
+import { motion } from 'framer-motion';
 
 export default function Home({ mouseEnter, mouseLeave }) {
 
     return (
         <>
-        <div className="space-y-80">
+        <motion.div className="space-y-80"
+        
+        initial={{ width: window.innerWidth}} 
+        animate={{ width: "100%" }} 
+        exit={{ x: 0-window.innerWidth, transition: { duration: 0.2 } }}>
             <div className="relative">
             <MyThree />
-            <div className="mx-4 px-24 pt-64 text-white">
+            <div className="mx-28 pt-64 text-white">
                 
                 <div className="xl:float-left xl:pr-24 pt-20">
                     <p className="text-2xl pb-3 px-2">hi, i'm</p>
@@ -33,7 +38,7 @@ export default function Home({ mouseEnter, mouseLeave }) {
             </div>
             </div>
             <Footer />
-        </div>
+        </motion.div>
         </>
     )
 }

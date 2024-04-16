@@ -37,6 +37,10 @@
   text-shadow: 0px 0px 30px #e0e2db;
 }
 
+.glow-logo:hover {
+  filter: drop-shadow(0px 0px 15px rgba(224,226,219, 1));
+}
+
 
 @media screen and (min-width: 600px) {
 * {

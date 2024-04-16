@@ -3,13 +3,13 @@ import ProjectModal from "./ProjectModal";
 import ToolsClosed from "./ToolsClosed";
 import { useState } from "react";
 
-export default function ProjectCard( { title = "Lorem ipsum", img =  Placeholder , tools = ["React"], description = "Dolor sit amet", link = "https://github.com/annikalogarta"} ) {
+export default function ProjectCard( { title = "Lorem ipsum", img =  Placeholder , tools = ["React"], description = "Dolor sit amet", link = "https://github.com/annikalogarta" } ) {
     
     const [openModal, setOpenModal] = useState(false)
 
     return (
         <>
-        <button onClick={() => { setOpenModal(true); }} className='my-8 h-[17rem] w-72 bg-white rounded-3xl shadow-2 text-midnight p-6'>
+        <button onClick={() => { setOpenModal(true); }} className='mx-[0.125rem] my-[0.125rem] h-[17rem] w-[25rem] bg-white text-midnight p-6'>
 
             <img src={ img }  alt="" className="h-36 w-full" />
             <div className="mt-2">

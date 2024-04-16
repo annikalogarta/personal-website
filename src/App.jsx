@@ -1,10 +1,9 @@
 import './App.css'
 import NavBar from './components/NavBar'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
+import AnimatedRoutes from './components/AnimatedRoutes'
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
 export default function App() {
 
@@ -50,10 +49,7 @@ export default function App() {
       
       <Router>
       <NavBar mouseEnter={textEnter} mouseLeave={textLeave} />
-        <Routes>
-          <Route path='/' element={<Home mouseEnter={textEnter} mouseLeave={textLeave} />} />
-          <Route path='/projects' element={<Projects />} />
-        </Routes>
+        <AnimatedRoutes textEnter={textEnter} textLeave={textLeave} />
       </Router>
         
 
