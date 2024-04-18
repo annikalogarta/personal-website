@@ -67,7 +67,7 @@ export default function Projects({ mouseEnter, mouseLeave }) {
         initial={{ width: 0}} 
         animate={{ width: "100%" }} 
         exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}>
-        <div className="text-white mb-96 sm:mx-24 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
+        <div className="text-white sm:mx-24 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
             <a id="projects" className="anchor"></a>
             <h2 className="inline-block duration-500 text-white text-shadow-name text-5xl  text-BlackHanSans mb-2">projects</h2>
             <p className="ml-3 mt-3">Some things that I've done or contributed to.</p>
