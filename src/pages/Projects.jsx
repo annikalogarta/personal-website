@@ -4,15 +4,20 @@ import { motion } from "framer-motion";
 
 import VitalWatch1 from "../assets/project_images/vital_watch_1.jpg"
 import Moodify1 from "../assets/project_images/moodify_1.jpg"
+import BmsCarrier1 from "../assets/project_images/bms_carrier_1.png"
+import BmsCarrier2 from "../assets/project_images/bms_carrier_2.png"
+import CreditCrimes1 from "../assets/project_images/credit_crimes_1.png"
 
 const proj = [
     {
-        id: 5,
-        title: 'KuMahjong',
-        tools: ['Javasript','React', 'Vite', 'Axios', 'Tailwind'],
-        description: 'Mahjong but with a twist; modified to make studying fun.',
-        link: 'https://github.com/annikalogarta/vital_watch'
+        id: 6,
+        title: 'BMS Carrier',
+        tools: ['Altium', 'LT Spice', 'Schematic Design', 'Component selection'],
+        img: BmsCarrier2,
+        description: 'Midnight Sun project - schematics and PCB layout for a batter management system (BMS) carrier, which serves as the main logic board that monitors and balance cells and their temperature by controlling AFEs and current sense.',
+        link: ''
     },
+    
     { 
         id: 4,
         title: 'Vital Watch',
@@ -32,17 +37,26 @@ const proj = [
         id: 2,
         title: 'Credit Crimes',
         tools: ['C', 'STM32'],
-        description: 'Lorem ipsum',
+        img: CreditCrimes1,
+        description: 'Detective game helping players identify tax fraud',
         link: 'https://devpost.com/software/papers-please-clone'
     },
-    { 
+    
+]
+{/*
+        id: 5,
+        title: 'KuMahjong',
+        tools: ['Javasript','React', 'Vite', 'Axios', 'Tailwind'],
+        description: 'Mahjong but with a twist; modified to make studying fun.',
+        link: 'https://github.com/annikalogarta/vital_watch'
+*/}
+{/* 
         id: 1, 
         title: 'PIARU',
         tools: ['C', 'STM32'],
         description: 'Lorem ipsum',
         link: 'https://github.com/annikalogarta/vital_watch'
-    }
-]
+*/}
 
 export default function Projects({ mouseEnter, mouseLeave }) {
 
@@ -56,6 +70,7 @@ export default function Projects({ mouseEnter, mouseLeave }) {
         <div className="text-white mb-96 sm:mx-24 px-6 sm:py-16 py-10 max-w-[85rem] mx-auto">
             <a id="projects" className="anchor"></a>
             <h2 className="inline-block duration-500 text-white text-shadow-name text-5xl  text-BlackHanSans mb-2">projects</h2>
+            <p className="ml-3 mt-3">Some things that I've done or contributed to.</p>
 
             <div className="py-10 flex flex-wrap justify-center">
                 {

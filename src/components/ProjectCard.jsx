@@ -12,7 +12,7 @@ export default function ProjectCard( { title = "Lorem ipsum", img =  Placeholder
         <button onClick={() => { setOpenModal(true); }} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className='relative mx-[0.125rem] my-[0.125rem] h-[17.5rem] w-[23rem] bg-white text-midnight duration-500 hover:bg-midnight'>
         
             <img src={ img }  alt="" className="block object-cover h-full w-full hover:opacity-0" />
-            <div className="absolute top-0 bottom-0 left-0 right-0 w-full bg-[#000000]/[0.50] opacity-0 hover:opacity-100 project-card duration-300 p-6 text-white">
+            <div className="absolute top-0 bottom-0 left-0 right-0 w-full bg-[#000000]/[0.80] opacity-0 hover:opacity-100 project-card duration-300 p-6 text-white">
                 <div className="text-left">
                     <p className="text-white font-bold text-md">{title}</p>
                     <p className="underline"><a href={link}>Link</a></p>
