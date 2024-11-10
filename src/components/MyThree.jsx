@@ -8,7 +8,7 @@ import { FlakesTexture } from 'three/examples/jsm/textures/FlakesTexture';
 export default function MyThree() {
 
     return (
-      <div className='absolute left-32 xl:left-72 top-10 -z-10' style={{ height: '60vh', width: '65vh' }} >
+      <div className='absolute lg:left-32 xl:left-72 top-10 -z-10' style={{ height: '60vh', width: '65vh' }} >
         <Canvas className='' camera={{ position: [0, 0, 5]}}>
           <OrbitControls autoRotate={true} enableZoom={false} />
           <directionalLight />
